@@ -22,6 +22,11 @@ int main() {
 	//const string key_word = "^\\s*w[a-zA-Z1-9_]*\\s+\\w[a-zA-Z1-9_]*\\s*;\\s*$";
 	string inputLine;
 
+	string ifElseTest1 = "if ( a == b ) {  }  else {  } "; 
+	string ifElseTest2 = "if ( a == b ) {  }  else {  } "; 
+	string ifElseTest3 = "if ( a == b ) {  }  else {  } "; 
+	string ifElseTest4 = "if  ( a == b )  {  } "; 
+
 	cout << "Input line to check : ";
 	getline(cin, inputLine, '\n');
 	
@@ -42,14 +47,14 @@ int main() {
 			//cout << "Идентификатор не может быть просто цифрой\n";
 		}
 	}
-	if (regex_match(inputLine, regex(ifelse)))
-	{
-		cout << "if else wrote ok";
-	}
-	else
-	{
-		cout << "if else wrote not ok";
-	}
+	//if (regex_match(inputLine, regex(ifelse)))
+	//{
+	//	cout << "if else wrote ok";
+	//}
+	//else
+	//{
+	//	cout << "if else wrote not ok";
+	//}
 	cin.get();
 	return main();
 }
